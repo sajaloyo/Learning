@@ -1,0 +1,530 @@
+[13:01:37] Hello, World!
+[13:08:00] Hello, World!
+[13:09:00] Hello, World!
+[13:09:45] starting application....
+[13:09:45] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:09:47] 
+    select
+        nextval ('hibernate_sequence')
+[13:09:47] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:09:47] binding parameter [1] as [VARCHAR] - [super foo]
+[13:09:47] binding parameter [2] as [BIGINT] - [11]
+[13:09:47] ERROR: relation "jpa_test" does not exist
+  Position: 64
+[13:09:47] cannot commit transaction
+javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:86)
+	at mc.hibernatetutorial.App.main(App.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:297)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:67)
+	... 7 more
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:106)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	... 7 more
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "jpa_test" does not exist
+  Position: 64
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2003)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:200)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:424)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:161)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:133)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 25 more
+[13:15:43] starting application....
+[13:15:43] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:15:44] 
+    select
+        nextval ('hibernate_sequence')
+[13:15:44] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:15:44] binding parameter [1] as [VARCHAR] - [super foo]
+[13:15:44] binding parameter [2] as [BIGINT] - [12]
+[13:16:15] starting application....
+[13:16:15] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:16:16] 
+    select
+        nextval ('hibernate_sequence')
+[13:16:16] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:16:16] binding parameter [1] as [VARCHAR] - [super foo]
+[13:16:16] binding parameter [2] as [BIGINT] - [13]
+[13:16:39] starting application....
+[13:16:39] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:16:41] 
+    select
+        nextval ('hibernate_sequence')
+[13:16:41] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:16:41] binding parameter [1] as [VARCHAR] - [super foo]
+[13:16:41] binding parameter [2] as [BIGINT] - [14]
+[13:17:01] starting application....
+[13:17:01] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:17:02] 
+    select
+        nextval ('hibernate_sequence')
+[13:17:02] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:17:02] binding parameter [1] as [VARCHAR] - [super foo]
+[13:17:02] binding parameter [2] as [BIGINT] - [15]
+[13:17:12] starting application....
+[13:17:12] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:17:14] 
+    select
+        nextval ('hibernate_sequence')
+[13:17:14] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:17:14] binding parameter [1] as [VARCHAR] - [super foo]
+[13:17:14] binding parameter [2] as [BIGINT] - [16]
+[13:19:42] starting application....
+[13:19:42] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:19:44] 
+    drop table if exists jpa_test cascade
+[13:19:44] 
+    drop sequence hibernate_sequence
+[13:19:44] create sequence hibernate_sequence start 1 increment 1
+[13:19:44] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[13:19:44] 
+    select
+        nextval ('hibernate_sequence')
+[13:19:44] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:19:44] binding parameter [1] as [VARCHAR] - [super foo]
+[13:19:44] binding parameter [2] as [BIGINT] - [1]
+[13:19:54] starting application....
+[13:19:54] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:19:55] 
+    drop table if exists jpa_test cascade
+[13:19:55] 
+    drop sequence hibernate_sequence
+[13:19:55] create sequence hibernate_sequence start 1 increment 1
+[13:19:55] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[13:19:55] 
+    select
+        nextval ('hibernate_sequence')
+[13:19:55] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:19:55] binding parameter [1] as [VARCHAR] - [super foo]
+[13:19:55] binding parameter [2] as [BIGINT] - [1]
+[13:20:27] starting application....
+[13:20:27] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:20:29] 
+    drop table if exists jpa_test cascade
+[13:20:29] 
+    drop sequence hibernate_sequence
+[13:20:29] create sequence hibernate_sequence start 1 increment 1
+[13:20:29] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[13:20:29] 
+    alter table jpa_test 
+        add constraint UK_foev1m1im07wiare8i2ktf2ae unique (name)
+[13:20:29] 
+    select
+        nextval ('hibernate_sequence')
+[13:20:29] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:20:29] binding parameter [1] as [VARCHAR] - [super foo]
+[13:20:29] binding parameter [2] as [BIGINT] - [1]
+[13:20:38] starting application....
+[13:20:38] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:20:39] 
+    drop table if exists jpa_test cascade
+[13:20:39] 
+    drop sequence hibernate_sequence
+[13:20:39] create sequence hibernate_sequence start 1 increment 1
+[13:20:39] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[13:20:39] 
+    alter table jpa_test 
+        add constraint UK_foev1m1im07wiare8i2ktf2ae unique (name)
+[13:20:39] 
+    select
+        nextval ('hibernate_sequence')
+[13:20:40] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:20:40] binding parameter [1] as [VARCHAR] - [super foo]
+[13:20:40] binding parameter [2] as [BIGINT] - [1]
+[13:21:12] starting application....
+[13:21:12] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:21:13] create sequence hibernate_sequence start 1 increment 1
+[13:21:13] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[13:21:13] 
+    alter table jpa_test 
+        add constraint UK_foev1m1im07wiare8i2ktf2ae unique (name)
+[13:21:13] 
+    select
+        nextval ('hibernate_sequence')
+[13:21:13] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:21:13] binding parameter [1] as [VARCHAR] - [super foo]
+[13:21:13] binding parameter [2] as [BIGINT] - [2]
+[13:21:13] ERROR: duplicate key value violates unique constraint "uk_foev1m1im07wiare8i2ktf2ae"
+  Detail: Key (name)=(super foo) already exists.
+[13:21:13] cannot commit transaction
+javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:86)
+	at mc.hibernatetutorial.App.main(App.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:297)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:67)
+	... 7 more
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	... 7 more
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "uk_foev1m1im07wiare8i2ktf2ae"
+  Detail: Key (name)=(super foo) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2003)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:200)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:424)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:161)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:133)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 25 more
+[13:21:57] starting application....
+[13:21:58] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[13:21:59] create sequence hibernate_sequence start 1 increment 1
+[13:21:59] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[13:21:59] 
+    alter table jpa_test 
+        add constraint UK_foev1m1im07wiare8i2ktf2ae unique (name)
+[13:21:59] 
+    select
+        nextval ('hibernate_sequence')
+[13:21:59] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[13:21:59] binding parameter [1] as [VARCHAR] - [sajal sarkar]
+[13:21:59] binding parameter [2] as [BIGINT] - [3]
+[14:06:47] starting application....
+[14:06:47] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[14:06:49] create sequence hibernate_sequence start 1 increment 1
+[14:06:49] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[14:06:49] 
+    alter table jpa_test 
+        add constraint UK_foev1m1im07wiare8i2ktf2ae unique (name)
+[14:06:49] 
+    select
+        nextval ('hibernate_sequence')
+[14:06:49] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[14:06:49] binding parameter [1] as [VARCHAR] - [sajal sarkar]
+[14:06:49] binding parameter [2] as [BIGINT] - [4]
+[14:06:49] ERROR: duplicate key value violates unique constraint "uk_foev1m1im07wiare8i2ktf2ae"
+  Detail: Key (name)=(sajal sarkar) already exists.
+[14:06:49] cannot commit transaction
+javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:86)
+	at mc.hibernatetutorial.App.main(App.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:297)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:67)
+	... 7 more
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	... 7 more
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "uk_foev1m1im07wiare8i2ktf2ae"
+  Detail: Key (name)=(sajal sarkar) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2003)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:200)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:424)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:161)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:133)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 25 more
+[14:11:17] starting application....
+[14:11:17] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[14:11:18] create sequence hibernate_sequence start 1 increment 1
+[14:11:18] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[14:11:18] 
+    alter table jpa_test 
+        add constraint UK_foev1m1im07wiare8i2ktf2ae unique (name)
+[14:11:19] 
+    select
+        nextval ('hibernate_sequence')
+[14:11:19] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[14:11:19] binding parameter [1] as [VARCHAR] - [sajal sarkar]
+[14:11:19] binding parameter [2] as [BIGINT] - [5]
+[14:11:19] ERROR: duplicate key value violates unique constraint "uk_foev1m1im07wiare8i2ktf2ae"
+  Detail: Key (name)=(sajal sarkar) already exists.
+[14:11:19] cannot commit transaction
+javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:86)
+	at mc.hibernatetutorial.App.main(App.java:31)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:67)
+	... 1 more
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	... 1 more
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "uk_foev1m1im07wiare8i2ktf2ae"
+  Detail: Key (name)=(sajal sarkar) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2003)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:200)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:424)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:161)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:133)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 19 more
+[14:11:53] starting application....
+[14:11:53] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[14:11:55] create sequence hibernate_sequence start 1 increment 1
+[14:11:55] 
+    create table jpa_test (
+        id int8 not null,
+        name varchar(255),
+        primary key (id)
+    )
+[14:11:55] 
+    alter table jpa_test 
+        add constraint UK_foev1m1im07wiare8i2ktf2ae unique (name)
+[14:11:55] 
+    select
+        nextval ('hibernate_sequence')
+[14:11:55] 
+    /* insert mc.hibernatetutorial.model.TestEntity
+        */ insert 
+        into
+            jpa_test
+            (name, id) 
+        values
+            (?, ?)
+[14:11:55] binding parameter [1] as [VARCHAR] - [Oyo Rooms]
+[14:11:55] binding parameter [2] as [BIGINT] - [6]
